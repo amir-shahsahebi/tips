@@ -1,0 +1,23 @@
+/* any p in div set red */
+div p {
+    /* color: red; */
+}
+
+/* any just grand children in div must red */
+div * p {
+    /* color: red; */
+}
+
+/* any just p child that div is his father */
+div > p {
+    /* color: red; */
+}
+
+/* any p that just come immediate after div and its not a child! */
+div + p {
+    /* color: red; */
+}
+/* any p that come after div and also not a child */
+div ~ p {
+    color: red;
+}
