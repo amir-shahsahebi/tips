@@ -13,23 +13,29 @@
         <form>
             <i class="fas fa-paper-plane"></i>
             <div class="input-group">
-                <label>full name</label>
-                <input type="text" placeholder="enter your name">
+                <label>Full Name</label>
+                <input type="text" placeholder="enter your name" id="contact-name" onkeyup="validateName()">
+                <span id="name-error"></span>
             </div>
             <div class="input-group">
-                <label>phone no.</label>
-                <input type="tel" placeholder="555 666 7770">
+                <label>Phone NO.</label>
+                <input type="tel" placeholder="555 666 7770" id="contact-phone" onkeyup="validatePhone()">
+                <span id="phone-error"></span>
             </div>
             <div class="input-group">
-                <label>email</label>
-                <input type="email" placeholder="enter email">
+                <label>Email</label>
+                <input type="email" placeholder="enter email" id="contact-email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
             </div>
             <div class="input-group">
-                <label>full name</label>
-                <TEXtarea rows="5" placeholder="ENTER YOUR MASSAGE"></TEXtarea>
+                <label>Your Message</label>
+                <TEXtarea rows="5" placeholder="ENTER YOUR MASSAGE" id="contact-message" onkeyup="validateMessage()"></TEXtarea>
+                <span id="message-error"></span>
             </div>
-            <button>submit</button>
+            <button>Submit</button>
+            <span id="submit-error"></span>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
