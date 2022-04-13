@@ -59,5 +59,15 @@ function validateMessage() {
     }
     messageError.innerHTML = `<i class="fas fa-check-circle"></i>`;
     return true;    
-    
+}
+
+function validateForm() {
+    if(!validateName() || !validatePhone() || !validateEmail() || !validateMessage()){
+        submitError.style.display= "block"; 
+        submitError.innerText= "please fix errors to submit";
+        setTimeout(function () {
+            submitError.style.display = "none"; 
+        },3000)
+        return false
+    }
 }
