@@ -71,3 +71,8 @@ function validateForm() {
         return false
     }
 }
+
+const light = document.querySelector(".light");
+light.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+})
